@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+        }
+        .custom-bottom-right-radius {
+          border-bottom-right-radius: 40px; 
+          background-color: rgb(255, 255, 255);
+          color: #636363;
+          box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+          width: 70%;
+          height: 80px;
+        
+        }
+        .gap{
+            gap:20px;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            padding: 0px;
+            background-color: #f8f9fa;
+            align-items: center;
+
+        }
+        .gap li a {
+            color: #474747;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+         
+        }
+        .icon {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-color: #474747;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+
+
+        }
+        .btn2{
+            background-color: #4e71fe;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-weight: 1000;
+            
+        }
+        .colorm
+        {
+            background-color: #4e71fe;
+            color: #f8f9fa;
+        }
+        .md1{
+            border-radius:100px;
+            background-color: #4e71fe;
+        }
+        .login1{
+            background-color: #aab8f3;  
+
+        }
+        .bm2{
+            background-color: #5263a1;
+            color: #ffffff;  
+            border-radius: 30px;
+            
+
+          
+            
+        }
+        .bm3{
+            background-color: #5263a1;
+            color: #ffffff;  
+            border-radius: 30px;
+        }
+        .bm4{
+            background-color: #5263a1;
+            color: #ffffff;  
+            border-radius: 30px;
+        }
+        .sign{
+            background-color: #5263a1;
+            color: #ffffff;  
+            border-radius: 30px;
+        }
+        .mdo{
+            background-color: #4e71fe;
+            color: #ffffff;  
+          
+        }
+        .mbo{
+            background-color: #4e71fe;
+            color: #ffffff;  
+             
+        }
+        .mfo{
+            background-color: #4e71fe;
+            color: #ffffff;  
+              
+        }
+        .mm1{
+            background-color: #aab8f3;  
+                
+        }
+        .card{
+            background-color: #aab8f3; 
+        }
+        .huge{
+            background-color: #f8f9fa;
+            width: 100%;
+            height: 700px;
+            border-bottom-left-radius:100px ;
+        }
+        .photomain{
+            background-image: url('assets/photos/layer-slider-1.png');
+            background-size: cover;
+            background-position: center;
+            height: 677px;
+            border-radius: 100px;
+            width: 677px;
+            
+
+
+        } 
+        .mainwriting{
+            margin-top: 30px;
+            margin-left:20px ;
+            width: 600px;
+           height: 600px; 
+            padding-top:100px;
+            padding-left: 10px;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            
+
+        }   
+        .hugew{
+            padding-left:0;
+            font-size: 65px;
+            font-weight: 1000;  
+        }
+        .p1{
+            padding:20px ;
+            padding-left: 35px;
+            color: rgb(137, 137, 137);
+            font-weight: 300;
+            font-size: 20px;
+        }
+        .bestbooks
+        {
+            padding-left:0;
+            font-size: 65px;
+            font-weight: 1000;  
+            padding: 0;
+            margin: 0;
+            color: #4e71fe;
+        }
+        .search{
+            background-color: #4e71fe;
+            color: #ffffff;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: 1000;
+            
+        }
+       .form1{
+        background-color: #ffffff;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-weight: 1000;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            width: 500px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .serch1{
+            background-color: #ffffff;
+            border: none;
+            font-size: 17px;
+            font-weight: 1000;
+
+        }
+        .h2cat{
+    font-size: 0;
+    height: 2px;
+    width: 450px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 20px 0 0;
+    background: rgba(167, 167, 167, .4);
+        }
+        .categories{
+            margin-top: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .catwriting{
+          width: 100%;
+           display: flex;
+           justify-content: space-between;
+            align-items: center;
+
+        }
+        .h3cat{
+            font-size: 20px;
+            font-weight:700;
+            background-color: #4e71fe;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 30px;
+            color: #ffffff;
+        }
+        .h4cat{
+            font-size: 50px;
+            font-weight: 1000;
+            color: #000000;
+
+        }
+        .h44cat{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            
+        }
+        .categories1{
+        
+        width: 100%;
+        height:600px;
+        margin-top: 30px;
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+      
+
+        }
+        .c1{
+            width: 350px;  
+            height: 590px;
+            margin: 10px;
+            background-color: #105372;
+            color: #ffffff;
+            border-radius: 30px;
+            transition: transform 0.5s;
+           &:hover{
+            border-color:#073347;
+            border-width: 10px;
+            border-style:groove;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transform: scale(1.15);
+            color:#4e71fe;
+
+       
+          }
+            
+        }
+        .c1 img {
+            width: 100%;  
+            height:100%;
+            background-color: #105372;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+        .viewc{
+            background-color:none; 
+            color:#ffffff;
+            border-width:2px;
+            border-radius:30px;
+            border-color:#ffffff;
+
+        }
+        .c2{
+            width: 300px;
+            height: 200px;
+       
+
+       
+          
+            
+            
+        }
+    
+        .co2{
+            width: 70%;
+        }
+        
+        .c3{
+            width: 100%;
+            height:90%;
+            border-radius: 30px;
+            background-color: #000000;
+            transition: transform 0.5s;
+           &:hover{
+            border-color:#000000;
+            border-width: 10px;
+            border-style:groove;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transform: scale(1.05);
+            color:#4e71fe;
+            z-index: 1000;
+
+       
+          }
+            
+            
+        }
+        .c3 img {
+            width: 100%;  
+            height:100%;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+        .c4{
+            width: 100%;
+            height:90%;
+            border-radius: 30px;
+            background-color: #f60;
+            transition: transform 0.5s;
+           &:hover{
+            border-color:#f60;
+            border-width: 10px;
+            border-style:groove;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transform: scale(1.05);
+            color:#4e71fe;
+            z-index: 1000;
+
+       
+          }
+           
+        }
+        .c4 img {
+            width: 100%;  
+            height:100%;
+            background-color: #f60;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+        .c5{     
+            width: 100%;
+            height:100%;
+            border-radius: 30px;
+            background-color: #758bfd;
+            transition: transform 0.5s;
+           &:hover{
+            border-color:#758bfd;
+            border-width: 10px;
+            border-style:groove;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transform: scale(1.05);
+            color:#4e71fe;
+            z-index: 1000;}
+
+        }
+        .c5 img {
+            width: 100%;  
+            height:100%;
+            background-color: #758bfd;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+        .c6{     
+            width: 100%;
+            height:100%;
+            border-radius: 30px;
+            background-color: rgb(70, 70, 70);  
+            transition: transform 0.5s;
+           &:hover{
+            border-color: rgb(70, 70, 70);  
+            border-width: 10px;
+            border-style:groove;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transform: scale(1.05);
+            color:#4e71fe;
+            z-index: 1000;}
+            
+        }
+        .c6 img {
+            width: 100%;  
+            height:100%;
+            background-color: rgb(70, 70, 70);
+            color: #ffffff;
+            border-radius: 30px;
+        }
+        .r1{
+            padding: 10px;
+           
+        }
+        .best-sellers{
+            margin-top: 103px;
+            width: 100%;
+            height: 1500px;
+            background-color: #f8f9fa;
+            border-radius:500px ;
+
+           
+        }
+        .best-s{
+            width: 100%;
+            height: 800px;
+        }
+
+      
+        .pp33{
+         display: flex;
+         height: 40px;
+         justify-content: center;
+         align-items: center;
+         margin-top: 100px;
+        }
+
+        .best-s{
+        margin-top: 130px;
+        height: 1000px;
+        width: 100%px;
+        }
+        .b2 {
+            background-color: #4e71fe;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-weight: 1000; 
+            width: 100%;  
+
+        }
+        .cc1{
+            img{
+                border-radius: 40px;
+                width:100%;
+                height:70%;
+             }
+
+            width:100%;
+            height:80%;
+            border-radius: 40px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+            transition: transform 0.5s;
+            &:hover{
+      transform: scale(1.2);
+        
+        color:#4e71fe;
+         img{
+          transform: rotate(360deg); 
+          transition: transform 0.5s;
+         }
+
+    }
+           
+        }
+
+       .imh{
+        width:100%;
+        height:100%;
+       }
+       .ct{
+        
+        font-size: 20px;
+        font-weight:1000; 
+        width: 100%;  
+
+       }
+       .car{
+        font-size: 20px;
+        color: #4e71fe;
+        font-weight:1000;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+       }
+       .all{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 200px;
+       }
+       .button1{
+        background-color: #4e71fe;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-weight: 1000; 
+            width: 200px  
+            
+       }
+
+       .Testimonials{
+        
+        height:500px ;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+       }
+       .gf1 {
+        width: 700px;
+        height:600px;
+        
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+       }
+       .cardt {
+        width: 400px;
+        height: 400px;
+        background-color: #ffffff;
+        border-radius: 60px;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+       }
+       .wcw {
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       }
+       .wcw1 {
+       font-size: 21px;
+       font-weight: bold;
+       justify-content: center;
+       align-items: center;
+       margin-top:120px ;
+       width: 100%;
+        
+       }
+       .wcw4{
+        font-size: 16px;
+        font-weight: 1000;
+        justify-content: center;
+        align-items: center;
+        
+        color:#5c5c5c;
+       }
+       .wcw3{
+        font-size: 25px;
+        font-weight: 1000;
+        justify-content: center;
+        align-items: center;
+        color:#4e71fe;
+       }
+       .wcw2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+       }
+       .wcw5{
+       justify-content: center;
+      align-items: center;
+      display:flex;
+      margin-top: 100px;
+      
+
+
+       }
+       .wcw5 img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+       
+       }
+       .bcbc{
+        background-color: #4e71fe;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin-top: 250px;
+       }
+
+       .dis{
+        margin-top: 120px;
+        width: 100%;
+        height: 500px;
+  
+        
+       }
+       .diss {
+        width: 100%;
+        height: 100%;
+        background-image: url('assets/photos/box-bg.jpg');
+        background-size: 100%;
+        border-radius: 60px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       }
+       .dess{
+        width: 100%;
+        height: 94%;
+        background-color:  rgba(32, 48, 129, .9);
+        background-position: center;
+        background-size: 100%;
+        opacity: .9;
+        border-radius: 60px;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.9);
+        justify-content: center;
+        
+        
+       }
+     
+      .h333{
+       margin-top: 30px;
+      
+      }
+      .dis1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dis2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .dis3{
+        font-size: 45px;
+        font-weight: 1000;
+        color: #ffffff;
+
+      }
+      .dis4{
+        font-size: 16px;
+        font-weight: 1000;
+        color: #ffffff8a;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+
+
+      }
+      .dis5{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .tt{ 
+        font-size: 20px;
+        font-weight: 1000;
+        color: #ffffff;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #4e71fe;
+        border-radius: 30px;
+        padding: 10px 20px;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.9);
+       
+
+
+      }
+      .dis6{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        
+        border-radius: 30px;
+        height: 60px;
+      }
+      .countdown-timer{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        height: 60px;
+        gap: 20px;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+
+      }
+      .time {
+        font-size: 15px;
+        font-weight: 1000;
+        color: #ffffff;
+        
+        justify-content: center;
+        align-items: center;
+      
+      }
+      .authors{
+        margin-top: 150px;
+        width: 100%;
+        height: 700px;
+      
+
+      }
+      .aa1{
+        margin-top: 40px;
+       
+        width: 100%;
+       height: 500px
+      
+      }
+      .r3{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s;
+           &:hover{
+            transform: scale(1.3);
+            color:#4e71fe;
+            z-index: 1000;
+           
+          
+          
+          }
+            
+
+      }
+      .r3 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+      }
+
+.aa2{
+  margin-top: 10px;
+  width: 100%;  
+ 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 1000;
+
+}
+.aa3{
+  width: 100%;  
+ 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #0000009a;
+  font-size: 15px;
+  font-weight: 1000;
+}
+.aa4 {
+  width: 100%; 
+  height: 60px; 
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #0000009a;
+  font-size: 15px;
+  font-weight: 1000;
+  margin-top: -30px;
+  
+
+}
+.aa5{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+}
+
+.daa1{
+  background-color: #4e71fe;
+  color: white;
+  font-weight: 1000;
+}
+.aw1{
+  width: 100%;
+  font-weight: 1000;
+ 
+}
+.aw2{
+  width: 100%;
+  background-color: #ffffff8a;
+ 
+  font-weight: 1000;
+  box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.6);
+  border-radius: 50%;
+}
+.aw2 img {
+  border-radius: 50%;
+}
+
+.aw4{
+  width: 100%;
+  font-weight: 400;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.last {
+  width: 100%;
+  height: 1000px;
+  background-color:none;
+  justify-content: center;
+
+}
+.get {
+  height:400px;
+  width:100%;
+  background-color: #758bfd;
+  box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.9);
+  background-image: url('assets/photos/box-bg-transparent.png');
+  background-size: 100%;
+  border-radius: 40px ;
+  position: relative;
+  transition: transform 0.5s;
+           &:hover{
+            transform: scale(1.05);
+            z-index: 1000;
+           
+          
+          
+          }
+}
+.contact{
+  height:600px;
+  width:100%;
+  justify-content: center;
+   align-items: center;
+   display: flex;
+   position: relative;
+   z-index:-1;
+   
+
+  
+  
+}
+.contact-form{
+  height:100%;
+  width: 80%;
+  background-color: #cecece5d;
+  box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.3);
+  background-size: 100%;
+  border-radius: 40px ;
+  margin-top: -100px;
+  justify-content: center;
+   align-items: center;
+   display: flex;
+
+
+}
+.rights{
+  margin-top: -100px;
+  height:100px;
+  width:100%;
+  background-color: #758bfd;
+  box-shadow: 0px 13px 26px 0px rgba(12, 12, 12, 0.9);
+  background-image: url('assets/photos/box-bg-transparent.png');
+  background-size: 100%;
+  border-top-right-radius: 40px ;
+  border-top-left-radius: 40px ;
+  position: relative;
+  transition: transform 0.5s;
+           &:hover{
+            transform: scale(1.05);
+            z-index: 1000;
+           
+          
+          
+          }
+}
+
+.g1{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+ 
+ 
+ 
+}
+.g2{
+  width: 100%; 
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
+  p{
+    width: 200px;
+    background-color: #27187e;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  
+
+
+}
+.g3{
+  width: 100%; 
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: 1000;
+  font-size: 60px;
+
+}
+.g4 {
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+.g5 {
+  width: 50%; 
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  font-weight: 1000;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: #4e71fe;
+  }
+
+
+  input {
+    width: 70%;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    
+  }
+  
+}
+.ss1{
+  background-color: #4e71fe;
+   padding:10px;
+   width: 30%;
+   border-radius: 30px;
+   color: white;
+   font-weight: 1000;
+   font-size: 15px;
+   gap:9px;
+
+
+  
+}
+
+.mmm0{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+
+}
+.mmm1{
+  padding:10px;
+  color: white;
+  font-weight: 1000;
+  font-size: 15px;
+  gap:9px;
+  a{
+    color: #ffffff71;
+    text-decoration: none;
+  }
+
+}
+.mmm2{
+  color: white;
+  width: 130px;
+  font-weight: 1000;
+  font-size: 15px;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+  a{
+    color: #4e71fe;
+    text-decoration: none;
+  }
+
+ 
+
+  
+}
+.mmm4{
+  
+  color: white;
+  font-weight: 1000;
+  font-size: 15px;
+  gap:9px;
+}
+.lis2{
+
+    color: #474747;
+    font-weight: 500;
+    font-size: 15px;
+    gap:9px;
+    
+
+}
+.aaaaa{
+      color:#4e71fe;
+      text-decoration:none;
+      margin-top: 190px;
+
+ }
+
+ .lis3{
+   color: #474747;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 80px;
+    border-left-color: #27187e ;
+    border-left-style: solid;
+    border-left-width: 3px;
+
+   
+ }
+ .lis3 h3{
+   color: #4e71fe;
+    font-weight: 1000;
+    font-size: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+  }
+
+ 
+.lis4 {
+  width: 100%;
+  color: #474747;
+  font-weight: 500;
+  font-size: 20px;
+  
+ 
+}
+.lis4 li{
+  width: 100%;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  list-style-type: none;
+}
+.cx{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #105372;
+  margin-bottom: 20px;
+  transition:0.5s;
+  border-radius: 50px;
+  padding: 10px;
+  &:hover {
+    background-color: #10537280;
+    img{
+          transform: rotate(360deg); 
+          transition: transform 0.8s;
+          border-radius: 50%;
+         }
+    
+    }
+  
+  }
+  
+  .cx img{
+   
+    border-radius:90px;
+    transition: transform 0.9s;
+  }
+  
+  .hh1{
+    background-color: #105372; 
+     color: white;
+  }
+  
+  .cx1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #000000; 
+  margin-bottom: 20px;
+  transition:0.5s;
+  border-radius: 50px;
+  padding: 10px;
+  &:hover {
+    background-color: #0000008f; 
+    img{
+          transform: rotate(360deg); 
+          transition: transform 0.8s;
+          border-radius: 50%;
+         }
+    
+    }
+  
+  }
+  
+  .cx1 img{
+   
+    border-radius:90px;
+    transition: transform 0.9s;
+  }
+  
+  .hh2{
+    background-color: #000000; 
+     color: white;
+     button{
+      color: white;
+      background-color: #000000;
+      border: none;
+     }
+  }
+
+  
+  .cx2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #f60;
+  margin-bottom: 20px;
+  transition:0.5s;
+  border-radius: 50px;
+  padding: 10px;
+  &:hover {
+    background-color: rgba(255, 102, 0, 0.63);
+    img{
+          transform: rotate(360deg); 
+          transition: transform 0.8s;
+          border-radius: 50%;
+         }
+    
+    }
+  
+  }
+  
+  .cx2 img{
+   
+    border-radius:90px;
+    transition: transform 0.9s;
+  }
+  
+  .hh3{
+    background-color: #f60;
+     color: white;
+     button{
+      color: white;
+      background-color: #f60;
+      border: none;
+     }
+  }
+  
+  .cx3{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #758bfd;
+  margin-bottom: 20px;
+  transition:0.5s;
+  border-radius: 50px;
+  padding: 10px;
+  &:hover {
+    background-color: #758cfd8f;
+    img{
+          transform: rotate(360deg); 
+          transition: transform 0.8s;
+          border-radius: 50%;
+         }
+    
+    }
+  
+  }
+  
+  .cx3 img{
+   
+    border-radius:90px;
+    transition: transform 0.9s;
+  }
+  
+  .hh4{
+    background-color: #758bfd;
+     color: white;
+     button{
+      color: white;
+      background-color: #758bfd;
+      border: none;
+     }
+  }
+  .cx4{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+  background-color: rgb(70, 70, 70);
+  margin-bottom: 20px;
+  transition:0.5s;
+  border-radius: 50px;
+  padding: 10px;
+  &:hover {
+    background-color: rgba(70, 70, 70, 0.664);
+    img{
+          transform: rotate(360deg); 
+          transition: transform 0.8s;
+          border-radius: 50%;
+         }
+    
+    }
+  
+  }
+  
+  .cx4 img{
+   
+    border-radius:90px;
+    transition: transform 0.9s;
+  }
+  
+  .hh5{
+    background-color: rgb(70, 70, 70);
+     color: white;
+     button{
+      color: white;
+      background-color: rgb(70, 70, 70);
+      border: none;
+     }
+  }
+  
+
+  .j1{
+  
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    
+  }
+  .j2{
+    background-color:#4e71fe;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color:#4e71feb0;
+    }
+  }
+  .j3{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .j4{
+    color:#4e71fe;
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+  }
+  .j5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .j6{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #5263a1;
+    color: white;
+
+    
+  }
+  .j6 button{
+    background-color: #5263a1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: #5263a1b0;
+    } 
+
+  }
+  #q{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q4{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q5{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q6{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  #q7{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+  .j7{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #4e71fe;
+    transition: 0.5s;
+    &:hover {
+      background-color: #4e71fe91;
+      color: #000000;
+    }
+    
+  }
+  .body2{
+   margin-top: 30px;
+   margin-left: 35px;
+  }
+  .hed1{
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    color:#4e71fe;
+
+ 
+  }
+  .bg1{
+    margin-left: 50px;
+  }
+  .navbar7{
+
+background-color:#4e71fe;
+border-radius: 50%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+position: fixed;
+color: rgb(255, 255, 255);
+width:50px;
+height: 50px;
+z-index: 1;
+text-align: center;
+justify-content: center;
+display:flex;
+top: 700px;
+right:10px;
+gap:20px;
+
+&:hover{
+    background-color: #3b4163;
+    color: rgb(255, 255, 255);
+
+}
+a{
+  padding: 10px;
+}
+
+
+
+}
+#email1{
+  color:#000000;
+}
+
+      </style>
+
+</head>
+<body>
+  
+    <div class="container d-flex gap" >
+    <nav class="navbar navbar-expand-lg   custom-bottom-right-radius " >
+        <div class="container-fluid  " id="lalala1">
+          <a class="navbar-brand" href="#"><img src="assets/photos/logo-book-shop.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hihihi1">Books</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Collections
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal22">Action and Adventure</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal33">Classics</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal44">Detective and
+                    Mystery</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal55">New York times bestsellers</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal66">Biography</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#lalala">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reading.html">Read Now</a>
+                  </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button type="button" class="btn position-relative icon "data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Login\Register</button>
+    </div>
+    <div class="modal fade login1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog md1">
+          <div class="modal-content">
+            <div class="modal-header colorm">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Hi,Login here </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body colorm">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Enter Your Uesrname</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Enter Your Password</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                <div class="mb-3">
+                  <button class ="bm2">forget your password ?</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer colorm">
+              <button type="button" class="btn bm3" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn bm4">Login</button>
+              <button type="button" class="btn sign">sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="modal fade mm1" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog mdo">
+          <div class="modal-content mdo">
+            <div class="modal-header mdo">
+              <h1 class="modal-title fs-5" id="exampleModalLabel1">Your Order</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mbo">
+                
+                <div class="card mb-3">
+                    <img src="assets/photos/bo1.jpg" class="card-img-top " >
+                    <div class="card-body">
+                      <h5 class="card-title">The River Of Xtra</h5>
+                      <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 20 mins ago</small></p>
+                      <button type="button" class="btn sign">Delete</button>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <img src="assets/photos/the ladys.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">The Lady’s Cross</h5>
+                      <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <button type="button" class="btn sign">Delete</button>
+                    </div>
+
+                  </div>
+                  <div class="card mb-3">
+                    <img src="assets/photos/5years.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">5 Years</h5>
+                      <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <button type="button" class="btn sign">Delete</button>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="modal-footer mfo">
+              <button type="button" class="btn bm3" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn sign">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="huge container d-flex" id="soso">
+          <div class="row">
+            <div class="col">
+               <div class ="mainwriting">
+               <h1 class="hugew" >Huge collection </br>of <p class="bestbooks">best books</p></h1>
+               <p class="p1">An online book is a resource in book-like form that is only available to read on the Internet. It differs from the common idea of an e-book.</p>
+               <form class="form1">
+                 <input type="text" id="serch" class ="serch1"name="serch" placeholder="Search for books....">
+                 <button type="submit" class="btn search">Search</button>
+               </form>
+               </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="assets/photos/layer-slider-model.png" class="photomain" >
+            </div>
+          </div>
+       </div>  
+<div class="categories container d-flex">
+<div class="catwriting">
+<p class ="h2cat"></p>
+<p class ="h3cat">Categories</p>
+<p class ="h2cat"></p>
+</div>
+<div class="h44cat" id="hihihi"><h3 class ="h4cat"> Xtra Book Collections</h3></div>
+
+<div class ="categories1 d-flex" >
+    <div class="col col-lg-4 .justify-content-center ">
+        <div class="card text-bg-dark c1">
+            <img src="assets/photos/Mask-Group-2.png" class="card-img" alt="..." >
+            <div class="card-img-overlay">
+              <h3 class="card-title">Action and Adventure.</h3>
+              <button class="btn viewc" data-bs-toggle="modal" data-bs-target="#exampleModal22">View Collection</button>
+              
+            </div>
+          </div>
+    </div>
+    <div class="col r1 .justify-content-center ">
+        <div class="row ">
+            <div class="col ">
+                <div class="card text-bg-dark c3">
+                    <img src="assets/photos/books3.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title">Classics.</h3>
+                      <button class="btn viewc" data-bs-toggle="modal" data-bs-target="#exampleModal33">View Collection</button>
+                      
+                    </div>
+                  </div>
+           
+            </div>
+            <div class="col col-lg-5">
+                <div class="card text-bg-dark c4">
+                    <img src="assets/photos/book1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title">Detective and</h3>
+                      <h3 class="card-title">Mystery</h3>
+                      <button class="btn viewc" data-bs-toggle="modal" data-bs-target="#exampleModal44">View Collection</button>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row  " >
+            <div class="col  col col-lg-9">
+                <div class="card text-bg-dark c5">
+                    <img src="assets/photos/books2 (1).png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title">New York times
+                        bestsellers</h3>
+                      <button class="btn viewc" data-bs-toggle="modal" data-bs-target="#exampleModal55">View Collection</button>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col ">
+                <div class="card text-bg-dark c6">
+                    <img src="assets/photos/biography.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title">Biography.</h3>
+                      <button class="btn viewc" data-bs-toggle="modal" data-bs-target="#exampleModal66">View Collection</button>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+        
+<div class="best-sellers ">
+<div class="pp33 container">
+    <div class="h2cat"></div>
+    <div class="h3cat">Best sellers</div>
+    <div class="h2cat"></div>
+</div>
+<div class="h44cat" id="hihihi1"><h3 class ="h4cat">This year's top sellers</h3></div>
+<div class="best-s container">
+<div class ="row">
+    <div class ="col">
+        <div class="card cc1" data-bs-toggle="modal" data-bs-target="#exampleModalaa" style="width: 18rem;">
+            <img src="assets/photos/p4.jpg" class="card-img-top  imh" alt="...">
+            <div class="card-body">
+              <h5 class="ct">Viper in the Window</h5>
+              <h6 class="car">$35</h6>
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div>  
+    <div class ="col">
+        <div class="card cc1 " data-bs-toggle="modal" data-bs-target="#exampleModalbb" style="width: 18rem;">
+            <img src="assets/photos/package5-1-600x600.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                <h6 class="car">$35</h6>
+                
+             
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div> 
+    <div class ="col ">
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalcc">
+            <img src="assets/photos/book6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+              <h6 class="car">$35</h6>
+              
+             
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div>  
+    <div class ="col">
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModaldd">
+            <img src="assets/photos/book7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+              <h6 class="car">$35</h6>
+              
+             
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div>   
+</div>
+<div class ="row">
+    <div class ="col">
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalee">
+            <img src="assets/photos/book8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+              <h6 class="car">$35</h6>
+              
+             
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div>  
+    <div class ="col">
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalff">
+            <img src="assets/photos/book9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                <h6 class="car">$35</h6>
+                
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div> 
+    <div class ="col">
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalgg">
+            <img src="assets/photos/book10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                <h6 class="car">$35</h6>
+                
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+    </div>  
+    <div class ="col"> 
+        <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalhh">
+        <img src="assets/photos/book11 (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="ct">Viper in the Window</h5>
+              <h6 class="car">$35</h6>
+              
+          
+          <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+        </div>
+      </div></div>  
+
+</div>
+
+<div class="all">
+    <button class="btn button1" data-bs-toggle="modal" data-bs-target="#exampleModalcf">View All</button>
+</div>
+</div>
+
+</div>
+
+<div class="test">
+    <div class="pp33 container">
+      <div class="h2cat"></div>
+      <div class="h3cat">Testimonials</div>
+      <div class="h2cat"></div>
+  </div>
+  <div class="h44cat"><h3 class ="h4cat">What Customer Say</h3></div>
+   <div class="Testimonials d-flex container  "> 
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="gf1">
+           <div class="cardt">
+           <div class="wcw">
+            <p class="wcw1">
+              ""The very best. Really good.<br/> I wish I would have thought of it first.<br/>  I couldn't have asked <br/> for more than this.""
+            </p>
+            <div class="wcw2">
+             <p class="wcw3">Sarah Green</p>
+             <p class="wcw4">Teacher</p>
+            </div>
+            <div class="wcw5">
+              <img src="assets/photos/testimonial-2.jpg" alt="green">
+            </div>
+           </div>
+           </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="gf1">
+            <div class="cardt">
+              <div class="wcw">
+                <p class="wcw1">
+                  ""The very best. Really good.<br/> I wish I would have thought of it first.<br/>  I couldn't have asked <br/> for more than this.""
+                </p>
+                <div class="wcw2">
+                 <p class="wcw3">Daniel Roosy</p>
+                 <p class="wcw4">Businessman</p>
+                </div>
+                <div class="wcw5">
+                  <img src="assets/photos/testimonial-1.png" alt="green">
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="gf1">
+            <div class="cardt">
+              <div class="wcw">
+              <p class="wcw1">
+                ""The very best. Really good.<br/> I wish I would have thought of it first.<br/>  I couldn't have asked <br/> for more than this.""
+              </p>
+              <div class="wcw2">
+               <p class="wcw3">Stephan More</p>
+               <p class="wcw4">Technician</p>
+              </div>
+              <div class="wcw5">
+                <img src="assets/photos/testimonial-3.jpg" alt="green">
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="gf1">
+            <div class="cardt">
+              <div class="wcw">
+              <p class="wcw1">
+                ""The very best. Really good.<br/> I wish I would have thought of it first.<br/>  I couldn't have asked <br/> for more than this.""
+              </p>
+              <div class="wcw2">
+               <p class="wcw3">Rose Johnson</p>
+               <p class="wcw4">Technician</p>
+              </div>
+              <div class="wcw5">
+                <img src="assets/photos/testimonial-4.jpg" alt="green">
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev bcbc" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next bcbc" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   
+   </div>
+  
+
+
+
+
+</div>
+   
+<div class="dis">
+<div class="diss container">
+<div class ="dess container">
+  <div class="dis1">
+    <div class="h3cat  h333">Special Offers</div>
+  </div>
+  <div class="dis2">
+    <p class="dis3">
+      Get 20% off on your entire purchase. Available now!
+    </p>
+  </div>
+  <div class="dis4">
+   <p>
+    An online book is a resource in book-like form that is only available to read on the Internet.<br/>It differs from the common idea of an e-book.
+   </p>
+  </div>
+  <div class="dis6">
+    <div class="countdown-timer" >
+      <div class="time">
+          <span id="days">00</span>
+      </div>
+      <div class="time">
+          <span id="hours">00</span>
+      </div>
+      <div class="time">
+          <span id="minutes">00</span>
+      </div>
+      <div class="time">
+      <span id="seconds">00</span>
+  
+</div>
+  </div>
+
+  </div>
+  <div class="dis5">
+    <button class="btn tt" >Shop Now</button>
+  </div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="authors">
+  <div class="pp33 container">
+    <div class="h2cat"></div>
+    <div class="h3cat">Authors</div>
+    <div class="h2cat"></div>
+</div>
+<div class="h44cat"><h3 class ="h4cat">Most Popular Authors</h3></div>
+
+  <div class ="aa1 container" >
+  <div class="row">
+    <div class="col r3">
+
+    <img src="assets/photos/team-member-1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+    <div class="aa4">
+    <div class="aa5"><a><i class="fa-brands fa-instagram fa-2xl" style="color: #4e71fe;"></i></a></div>
+    </div>
+    <div class="aa2">
+    <p class="h7">Adam Grant</p>
+    </div>
+    <div class="aa3">
+      <p class="h8">Psychologist</p>
+      </div>
+    
+    </div>
+    <div class="col r3">
+      <img src="assets/photos/team-2.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+      <div class="aa4">
+        <div class="aa5"><a><i class="fa-brands fa-instagram fa-2xl" style="color: #4e71fe;"></i></a></div>
+        </div>
+        <div class="aa2">
+        <p class="h7">Dan Brown</p>
+        </div>
+        <div class="aa3">
+          <p class="h8">American author</p>
+          </div>
+        
+    </div>
+    <div class="col r3">
+      <img src="assets/photos/team-3.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+      <div class="aa4">
+        <div class="aa5"><a><i class="fa-brands fa-instagram fa-2xl" style="color: #4e71fe;"></i></a></div>
+        </div>
+        <div class="aa2">
+        <p class="h7">James Patterson</p>
+        </div>
+        <div class="aa3">
+          <p class="h8">Psychologist</p>
+          </div>
+        
+    </div>
+    <div class="col r3">
+      <img src="assets/photos/team-4.jpg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">  
+      <div class="aa4">
+        <div class="aa5"><a><i class="fa-brands fa-instagram fa-2xl" style="color: #4e71fe;"></i></a></div>
+        </div>
+        <div class="aa2">
+        <p class="h7">J. K. Rowling</p>
+        </div>
+        <div class="aa3">
+          <p class="h8">British author</p>
+          </div>
+        
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog daa1">
+    <div class="modal-content">
+      <div class="modal-header daa1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Adam Grant</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body daa1">
+        <div  class="aw1">
+         <div class="aw2">
+          <img src="assets/photos/team-member-1.jpg" alt="" class="aw2">
+         </div>
+         <div class="aw3">
+          <p class="h6">Psychologist</p>
+         </div>
+         <div class="aw4">
+          <p>Adam Grant is a psychologist with a passion for books. He has written books on various topics such as mental health, relationships, and self-help. Adam is also a freelance writer.</p>
+         </div>
+
+
+        </div>
+      </div>
+      <div class="modal-footer daa1">
+        <button type="button " class="btn close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog daa1">
+    <div class="modal-content">
+      <div class="modal-header daa1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Dan Brown</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body daa1">
+        <div  class="aw1">
+          <div class="aw2">
+           <img src="assets/photos/team-2.jpg" alt="" class="aw2">
+          </div>
+          <div class="aw3">
+           <p class="h6">American author</p>
+          </div>
+          <div class="aw4">
+            <p>Dan Brown is an American author known for his books on mental health, relationships, and self-help. He has written numerous articles and columns in various publications.</p>
+          </div>
+ 
+ 
+         </div>
+      
+      </div>
+      <div class="modal-footer daa1">
+        <button type="button " class="btn close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog daa1">
+    <div class="modal-content">
+      <div class="modal-header daa1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">James Patterson</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body daa1">
+        <div  class="aw1">
+          <div class="aw2">
+           <img src="assets/photos/team-3.jpg" alt="" class="aw2">
+          </div>
+          <div class="aw3">
+           <p class="h6">Psychologist</p>
+          </div>
+          <div class="aw4">
+            <p>James Patterson is a psychologist with a passion for books. He has written books on various topics such as mental health, relationships, and self-help. James is also a freelance writer.</p>
+          </div>
+ 
+ 
+         </div>
+      </div>
+      <div class="modal-footer daa1">
+        <button type="button " class="btn close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog daa1">
+    <div class="modal-content">
+      <div class="modal-header daa1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">J. K. Rowling</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body daa1">
+        <div  class="aw1">
+          <div class="aw2">
+           <img src="assets/photos/team-4.jpg" alt="" class="aw2">
+          </div>
+          <div class="aw3">
+           <p class="h6">British author</p>
+          </div>
+          <div class="aw4">
+            <p>J. K. Rowling is a British author known for her books on mental health, relationships, and self-help. She has written numerous articles and columns in various publications.</p>
+          </div>
+ 
+ 
+         </div>
+      </div>
+      <div class="modal-footer daa1">
+        <button type="button " class="btn close" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="last " id="lalala">
+  <div class="get container z-3 ">
+   <div class="g1">
+    <div class="g2">
+     <p>Get Discounts</p>
+    </div>
+    <div class="g3">
+    <P>Subscribe to newsletter</P>
+    </div>
+    <div class="g4">
+     <div class="g5">
+      <input type="text" id="email1" class="email3" placeholder="Your Email Address">
+      <button class="btn ss1" onclick="sent()"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Subscribe</button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="contact ">
+    <div class="contact-form">
+     <div class="lis1 container">
+      <div class="row">
+        <div class="col">
+          <div class="lis2">
+            <img src="assets/photos/logo ().png">
+            <p>“Be who you are and say what you feel,<br/> because those who mind don't matter,<br/> and those who matter don't mind.”</p>
+            <a href="https://www.facebook.com/MOMO38322/" class="aaaaa">-Mohammad bisahwi</a>
+
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="lis3">
+            <h3>Menu</h3>
+            <div class="lis4">
+              <li >Home</li>
+              <li >Books</li>
+              <li >Collections</li>
+              <li >Categories</li>
+              <li >Tags</li>
+            </div>
+           
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="lis3">
+            <h3>Support</h3>
+            <div class="lis4">
+              <li >FAQs</li>
+              <li >Terms & Conditions</li>
+              <li >Privacy Policy</li>
+              <li >Request a Book</li>
+              <li >DMCA Notice</li>
+            </div>
+           
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="lis3">
+            <h3>About us</h3>
+            <div class="lis4">
+              <li >About us</li>
+              <li >Partners</li>
+              <li >Features</li>
+              <li >Affiliate</li>
+              <li >Contact us</li>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+     </div>
+      
+    </div>
+  </div>
+<div class="rights container z-3  ">
+   <div class="mmm0">
+    <div class="mmm1">
+      <p>Made with <i class="fa-solid fa-heart" style="color:#27187e;"></i> by <a href="https://www.facebook.com/MOMO38322/" class="link1" >Mohammad bishawi</a></p>
+    
+    </div>
+    <div class="mmm2">
+      <a href="https://www.facebook.com/MOMO38322/" class="insta"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+       <a href="https://www.facebook.com/MOMO38322/" class="wats"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+       <a href="https://www.facebook.com/MOMO38322/" class="facebook"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+  
+   
+   <div class="mmm4">
+    <p>Copyright © 2024. All rights reserved.</p>
+   </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<div class="modal fade modal-xl " id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hh1">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Action and Adventure</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg1">
+       <div class="row">
+         <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/a1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/a2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/a3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic/h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/a4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/A5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx" style="width: 18rem;">
+            <img src="assets/photos/A6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natural Cosmetic</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer hh1">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade modal-xl " id="exampleModal33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hh2">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Classics</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg1">
+       <div class="row">
+         <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/c1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/c2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/c3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/a4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/c4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx1" style="width: 18rem;">
+            <img src="assets/photos/A6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Network R</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer hh2">
+        <button type="button" class="" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade modal-xl " id="exampleModal44" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hh3">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detective and
+          Mystery</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg1">
+       <div class="row">
+         <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/c1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/c2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/c3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/a4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/c4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx2" style="width: 18rem;">
+            <img src="assets/photos/A6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autobiography</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer hh3">
+        <button type="button" class="" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade modal-xl " id="exampleModal55" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hh4">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New York times
+          bestsellers</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg1 ">
+       <div class="row">
+         <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/c1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/c2.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/c3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/a4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/c4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx3" style="width: 18rem;">
+            <img src="assets/photos/A6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Never Stop Dream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer hh4">
+        <button type="button" class="" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal fade modal-xl " id="exampleModal66" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hh5">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Biography.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg1">
+       <div class="row">
+         <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/c1.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/c2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+         <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/c3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/a4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/c4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card cx4" style="width: 18rem;">
+            <img src="assets/photos/A6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The River of XTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer hh5">
+        <button type="button" class="" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal modal-xl fade" id="exampleModalaa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/bo1.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec">-</button>
+              <p id="q">0</p>
+              <button id="inc">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-xl fade" id="exampleModalbb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/a3.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec1">-</button>
+              <p id="q1">0</p>
+              <button id="inc1">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal modal-xl fade" id="exampleModalcc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/5years.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec2">-</button>
+              <p id="q2">0</p>
+              <button id="inc2">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal-xl fade" id="exampleModaldd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/book7.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec3">-</button>
+              <p id="q3">0</p>
+              <button id="inc3">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-xl fade" id="exampleModalee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/book8.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec4">-</button>
+              <p id="q4">0</p>
+              <button id="inc4">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-xl fade" id="exampleModalff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/a4.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec5">-</button>
+              <p id="q5">0</p>
+              <button id="inc5">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal modal-xl fade" id="exampleModalgg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/book10.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec6">-</button>
+              <p id="q6">0</p>
+              <button id="inc6">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal modal-xl fade" id="exampleModalhh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Viper in the Window</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row j1">
+          <div class="col">
+            <img src="assets/photos/c2.jpg" alt="..." class="img-fluid j2">
+          </div>
+          <div class="col">
+            <P class="j3">Viper in the Window</P>
+            <p class="j4">$35</p>
+            <p class="j5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="j6">
+              <button id="dec7">-</button>
+              <p id="q7">0</p>
+              <button id="inc7">+</button>
+            </div>
+            <button class="btn j7">Add to cart</button>
+
+          </div>
+           
+  
+          
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade modal-xl" id="exampleModalcf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header hed">
+        <h1 class="modal-title fs-5 hed1" id="exampleModalLabel">All Books</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body body2">
+        <div class ="row">
+          <div class ="col">
+              <div class="card cc1" data-bs-toggle="modal" data-bs-target="#exampleModalaa" style="width: 18rem;">
+                  <img src="assets/photos/p4.jpg" class="card-img-top  imh" alt="...">
+                  <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                    <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                  </div>
+                </div>
+          </div>  
+          <div class ="col">
+              <div class="card cc1 " data-bs-toggle="modal" data-bs-target="#exampleModalbb" style="width: 18rem;">
+                  <img src="assets/photos/package5-1-600x600.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="ct">Viper in the Window</h5>
+                      <h6 class="car">$35</h6>
+                      
+                   
+                    <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                  </div>
+                </div>
+          </div> 
+          <div class ="col ">
+              <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalcc">
+                  <img src="assets/photos/book6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                   
+                    <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                  </div>
+                </div>
+          </div>  
+          <div class ="col">
+              <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModaldd">
+                  <img src="assets/photos/book7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                   
+                    <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                  </div>
+                </div>
+          </div>  
+          
+          
+          <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalee">
+                <img src="assets/photos/book8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+                 
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalff">
+                <img src="assets/photos/book9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div> 
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalgg">
+                <img src="assets/photos/book10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col"> 
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalhh">
+            <img src="assets/photos/book11 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div></div>  
+    
+          <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalee">
+                <img src="assets/photos/book8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+                 
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalff">
+                <img src="assets/photos/book9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div> 
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalgg">
+                <img src="assets/photos/book10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col"> 
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalhh">
+            <img src="assets/photos/book11 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div></div>  
+    
+          <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalee">
+                <img src="assets/photos/book8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+                 
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalff">
+                <img src="assets/photos/book9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div> 
+        <div class ="col">
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalgg">
+                <img src="assets/photos/book10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="ct">Viper in the Window</h5>
+                    <h6 class="car">$35</h6>
+                    
+                  
+                  <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+                </div>
+              </div>
+        </div>  
+        <div class ="col"> 
+            <div class="card cc1" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModalhh">
+            <img src="assets/photos/book11 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="ct">Viper in the Window</h5>
+                  <h6 class="car">$35</h6>
+                  
+              
+              <a href="#" class="btn b2"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Add to cart</a>
+            </div>
+          </div></div>  
+    
+        
+      </div>
+
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+ 
+<div class="navbar7">
+  <a href="#lalala1"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i></a>
+</div>
+
+
+
+
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  (function(){
+     emailjs.init({
+       publicKey: "KJ4aN9bPAhRJaOlCq",
+     });
+  })();
+  </script>
+
+<script>
+const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget
+    const recipient = button.getAttribute('data-bs-whatever')
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+})
+}
+
+const countDown =() => {
+    const countdownDate = new Date("2024-12-02T00:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.querySelector("#days").innerHTML = days +" Day"
+    document.querySelector("#hours").innerHTML = hours+" Hourd"
+    document.querySelector("#minutes").innerHTML = minutes+" Minutes"
+    document.querySelector("#seconds").innerHTML = seconds+" Seconds"
+
+                         
+}
+setInterval( ()=>{
+    countDown()},1000
+)
+
+
+
+let dddd=0 ; 
+
+document.getElementById('inc').addEventListener('click', ()=>{
+  
+    dddd++;
+    document.getElementById('q').innerHTML = dddd;
+})
+
+document.getElementById('dec').addEventListener('click', ()=>{
+   if(dddd>0){
+    dddd--;
+    document.getElementById('q').innerHTML = dddd;
+   }
+  })
+
+  let d1=0 ; 
+
+document.getElementById('inc1').addEventListener('click', ()=>{
+  
+  d1++;
+    document.getElementById('q1').innerHTML = d1;
+})
+
+document.getElementById('dec1').addEventListener('click', ()=>{
+   if(d1>0){
+    d1--;
+    document.getElementById('q1').innerHTML = d1;
+   }
+  })
+
+  let d2=0 ; 
+
+document.getElementById('inc2').addEventListener('click', ()=>{
+  
+  d2++;
+    document.getElementById('q2').innerHTML = d2;
+})
+
+document.getElementById('dec2').addEventListener('click', ()=>{
+   if(d2>0){
+    d2--;
+    document.getElementById('q2').innerHTML = d2;
+   }
+  })
+
+
+  let d3=0 ; 
+
+document.getElementById('inc3').addEventListener('click', ()=>{
+  
+  d3++;
+    document.getElementById('q3').innerHTML = d3;
+})
+
+document.getElementById('dec3').addEventListener('click', ()=>{
+   if(d3>0){
+    d3--;
+    document.getElementById('q3').innerHTML = d3;
+   }
+  })
+
+
+  let d4=0 ; 
+
+document.getElementById('inc4').addEventListener('click', ()=>{
+  
+  d4++;
+    document.getElementById('q4').innerHTML = d4;
+})
+
+document.getElementById('dec4').addEventListener('click', ()=>{
+   if(d4>0){
+    d4--;
+    document.getElementById('q4').innerHTML = d4;
+   }
+  })
+
+  let d5=0 ; 
+
+document.getElementById('inc5').addEventListener('click', ()=>{
+  
+  d5++;
+    document.getElementById('q5').innerHTML = d5;
+})
+
+document.getElementById('dec5').addEventListener('click', ()=>{
+   if(d5>0){
+    d5--;
+    document.getElementById('q5').innerHTML = d5;
+   }
+  })
+
+
+  let d6=0 ; 
+
+document.getElementById('inc6').addEventListener('click', ()=>{
+  
+  d6++;
+    document.getElementById('q6').innerHTML = d6;
+})
+
+document.getElementById('dec6').addEventListener('click', ()=>{
+   if(d6>0){
+    d6--;
+    document.getElementById('q6').innerHTML = d6;
+   }
+  })
+
+
+  let d7=0 ; 
+
+document.getElementById('inc7').addEventListener('click', ()=>{
+  
+  d7++;
+    document.getElementById('q7').innerHTML = d7;
+})
+
+document.getElementById('dec7').addEventListener('click', ()=>{
+   if(d7>0){
+    d7--;
+    document.getElementById('q7').innerHTML = d7;
+   }
+  })
+
+
+
+  function sent(){
+    var params={
+     from_name:document.getElementById('email1').value 
+    }
+    emailjs.send("service_dz9ndin","template_2zp08vf",params).then(function(res){
+      alert("subscribed successfully");
+    });
+  }
+
+     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

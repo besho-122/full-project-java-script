@@ -1,0 +1,227 @@
+body {
+ height: 100vh;
+ margin: 0;
+ background-color: #758bfd;  
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+    
+}
+
+#pdfInput{
+    color:wrgb(0, 0, 0);
+    background-color:  #758bfd;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+}
+
+iframe {
+    width: 100%;
+    height: 700px; 
+    background: rgba(0, 0, 0, 0);
+    resize:vertical;
+}
+.Reading_site{
+    background-color: #242222;
+    background-image: url('img1/box-bg-transparent.png');
+    background-size: 400%;
+    border: 2px solid  #758bfd;
+    padding: 30px;
+    margin: auto;
+    border-radius: 100px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 0px;
+    margin-top: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: #3b4163;
+        color: rgb(255, 255, 255);
+
+    }
+    .h11{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    
+
+  
+}
+.navbar{
+    background-color: #242222;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url('img1/box-bg-transparent.png');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width:300px;
+    z-index: 1;
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    gap:20px;
+    a{
+        margin: 0;
+        color: #758bfd;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+
+    }
+    &:hover{
+        background-color: #3b4163;
+        color: rgb(255, 255, 255);
+
+    }
+
+}
+.navbar2{
+    background-color: #242222;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url('img1/box-bg-transparent.png');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0; 
+    color: rgb(255, 255, 255);
+    width:300px;
+    height:400px;
+    z-index: 1;
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+
+    margin-right:0px;
+    margin-top: 200px;
+    gap:20px;
+    a{
+        margin: 0;
+        color: #758bfd;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+
+    }
+    &:hover{
+        background-color: #3b4163;
+        color: rgb(255, 255, 255);
+
+    }
+
+}
+.navbar3{
+
+    background-color: #242222;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-image: url('img1/box-bg-transparent.png');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 30px 0 rgba(0, 0, 0, 0.7);
+    position: fixed;
+    color: rgb(255, 255, 255);
+    width:300px;
+    height: 400px;
+    z-index: 1;
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    top: 200px;
+    right:0;
+    gap:20px;
+    a{
+        margin: 0;
+        color: #758bfd;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+
+    }
+    &:hover{
+        background-color: #3b4163;
+        color: rgb(255, 255, 255);
+
+    }
+    hi{
+        width: 100%;
+        height: 90%;
+
+    }
+  
+    
+}
+
+.b4{
+    background-color: #758bfd;
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 30px
+
+  
+}
+.r1{
+    border-radius: 60px;
+
+}
+
+
+#time{
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+#startb ,#resetb,#stopb{
+    font-size: 23px;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold  ;
+    padding:10px;
+    background-color: #758bfd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color:  #758cfd52;
+    }
+
+}
